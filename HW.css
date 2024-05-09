@@ -1,0 +1,212 @@
+/* Header */
+ul {
+   list-style: none; 
+}
+.row li {
+   /* Display text elements in a row */
+   display: inline-block;
+   /* Add space between elements */
+   margin-right: 10px; /* Adjust as needed */
+}
+.row {
+   /* Use flexbox to align items horizontally */
+   display: flex;
+   align-items: center; /* Align items vertically in the center */
+}
+.between {
+   justify-content: space-between;
+}
+.row h4, .row ul {
+   /* Add space between elements */
+   margin-right: 10px; /* Adjust as needed */
+}
+
+.row ul {
+   /* Remove default list styles */
+   list-style-type: none;
+   padding: 0;
+}
+
+.row ul li {
+   /* Style list items */
+   margin-right: 10px; /* Adjust as needed */
+}
+.row h4 {
+   margin-right: 820px; /* Adjust as needed to create space */
+}
+selector {
+   background-image: url('/images/Group 356.png');
+}
+.flex-container {
+   display: block; /* Use flexbox layout */
+}
+.w100{ width: 100%;
+
+} 
+.w25{width: 25%;}
+.w50{width: 50%;}
+.w75{width: 75%;}
+.w15{width: 15%;}
+.w13{width: 13%;}
+.centercontainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Adjust as per your need */
+}
+.top{ position: relative; top: 400px; }
+.text-container {
+   display: flex;
+   flex-direction: column;
+ }
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-size: 1440px 809px;
+   background-image: url('/images/Group 356.png'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+   background-position: top; /* Center the background image */
+   background-repeat: no-repeat;
+}
+/* footer */
+h6{position: absolute; left: 1200px; top: 680px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 18px;}
+.footer{background-color: #8c8cf8;
+padding: 0%;
+position: relative; top: 610px; }
+.button-container {
+   display: flex;
+   justify-content: baseline;
+  }
+.buttonspace{ margin-right: 10px;}
+/* font */
+h1 {
+   font-size: 64px; /* Adjust the font size as needed */
+}
+
+.oswald{
+   font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oswald/v53/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format('woff2');
+   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+   
+ }
+h3 {
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 32px;}
+p{
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;}
+.roboto-bold {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    /* skills */
+    .container {
+      display: flex; /* Use flexbox layout */
+  }
+  .skillbox {
+   display: flex;
+   justify-content: space-between;
+}
+
+.skillbox > div {
+   flex: 1;
+   margin-right: 10px; /* Adjust as needed */
+}
+.skillboxcenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center; /* Center-align text */
+   margin-top: 50px; /* Adjust margin as needed */
+}
+  /* Container for "My UX Skills" section */
+.skills-container {
+   background-color: #f5f5f5; /* Background color of the container */
+   padding: 50px; /* Padding around the content */
+   border-radius: 10px; /* Rounded corners for the container */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+   text-align: center; /* Center-align text */
+   margin-top: 50px; /* Adjust margin as needed */
+}
+
+/* "My UX Skills" heading */
+.skills-container h1 {
+   margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Skill boxes */
+.skillbox {
+   display: flex;
+   justify-content: space-between;
+}
+
+.skillbox > div {
+   flex: 1;
+   margin-right: 10px; /* Adjust spacing between skill boxes */
+   padding: 20px; /* Padding inside each skill box */
+   background-color: white; /* Background color of each skill box */
+   border-radius: 5px; /* Rounded corners for each skill box */
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.skillbox > div:last-child {
+   margin-right: 0; /* Remove margin from the last skill box */
+}
+/* Container for "My UX Skills" section */
+.myuxskills-container {
+   background-color: #f5f5f5; /* Background color of the container */
+   padding: 50px; /* Padding around the content */
+   border-radius: 10px; /* Rounded corners for the container */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+   text-align: center; /* Center-align text */
+   margin-top: 50px; /* Adjust margin as needed */
+}
+
+/* "My UX Skills" heading */
+.myuxskills-container h1 {
+   margin-bottom: 20px; /* Space below the heading */}
+   
+   @media screen and (max-width: 600px) {
+      #categoryGrid{}
+      /* Flex container */
+      .row {
+        flex-direction: column; /* Display flex items vertically */
+      }
+    
+      /* Flex children */
+      .row li {
+        width: 100%; /* Make flex items take up full width */
+      }
+    
+      /* My UX Skills section */
+      .myuxskills-container {
+        margin-top: 20px; /* Adjust margin for spacing */
+      }
+    
+      /* Skill boxes */
+      .skillbox > div {
+        flex-direction: column; /* Display skill box content vertically */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add margin between skill boxes */
+      }
+    
+      /* "My UX Skills" heading */
+      .myuxskills-container h1 {
+        margin-bottom: 20px; /* Space below the heading */
+      }
+    }
+    
